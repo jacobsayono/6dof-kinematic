@@ -1,4 +1,4 @@
-# 6-DOF Robot Arm Kinematics
+# 6-DOF Robot Arm Kinematics (C++)
 
 This repository defines a class that solves the forward kinematics (FK) and inverse kinematics (IK) of a 6 degree of freedom (DOF) robot arm.
 
