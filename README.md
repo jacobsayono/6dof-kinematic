@@ -1,9 +1,9 @@
-## 6DOF Kinematic
+# 6-DOF Robot Arm Kinematics
 
 This repository defines a class that solves the forward kinematics (FK) and inverse kinematics (IK) of a 6 degree of freedom (DOF) robot arm.
 
 
-## Forward Kinematics
+## Forward Kinematics `SolveFK()`
 
 This code implements the forward kinematics solution for a 6 degree-of-freedom robotic arm. The function takes in a 6D joint input and returns the corresponding 6D pose output. The input joint angles are first converted from degrees to radians and stored in an array `q_in`. The `q` array is then calculated by adding the DH parameter `DH_matrix[i][0]` to each `q_in[i]` value.
 
@@ -14,7 +14,7 @@ The `L` arrays contain the distances between the joint axes and the position of 
 Finally, the 6D pose output is calculated by combining the position and orientation of the end effector. The Euler angles are extracted from `R06` using the `RotMatToEulerAngle` function. The 6D pose output is returned as a structure containing the X, Y, and Z positions, and the A, B, and C orientation angles, as well as the rotation matrix `R06`. The function returns a boolean value indicating whether the forward kinematics solution was successfully calculated.
 
 
-# Inverse Kinematics
+# Inverse Kinematics `SolveIK()`
 
 This code is implementing an inverse kinematics (IK) solver for a 6-DOF robotic arm. The IK solver calculates the joint angles required for the arm to achieve a desired end-effector pose, given as a 6D pose (position and orientation) in space.
 
