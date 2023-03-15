@@ -14,7 +14,7 @@ The `L` arrays contain the distances between the joint axes and the position of 
 Finally, the 6D pose output is calculated by combining the position and orientation of the end effector. The Euler angles are extracted from `R06` using the `RotMatToEulerAngle` function. The 6D pose output is returned as a structure containing the X, Y, and Z positions, and the A, B, and C orientation angles, as well as the rotation matrix `R06`. The function returns a boolean value indicating whether the forward kinematics solution was successfully calculated.
 
 
-# Inverse Kinematics `SolveIK()`
+## Inverse Kinematics `SolveIK()`
 
 This code is implementing an inverse kinematics (IK) solver for a 6-DOF robotic arm. The IK solver calculates the joint angles required for the arm to achieve a desired end-effector pose, given as a 6D pose (position and orientation) in space.
 
